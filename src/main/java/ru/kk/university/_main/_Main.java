@@ -17,6 +17,9 @@ public class _Main {
         student.name = "Michel Mind";
         student.university = university;
 
+        university.employmentTeacher(teacher);
+        university.enrollStudent(student);
+
         performAction(teacher);
         performAction(student);
     }

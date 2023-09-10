@@ -6,7 +6,7 @@ public class Student implements StudentActions {
 
     @Override
     public void doAction() {
-        System.out.println("Студент " + this.name + " идет на занятия в университет " + this.university.name + ".");
+        System.out.println("Студент " + this.name + " идет на занятия в " + this.university.name + ".");
     }
 
     @Override

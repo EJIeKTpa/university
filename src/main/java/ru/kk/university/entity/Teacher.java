@@ -6,7 +6,7 @@ public class Teacher implements TeacherActions {
 
     @Override
     public void doAction() {
-        System.out.println("Учитель " + this.name + " идет на работу в университет " + this.university.name + ".");
+        System.out.println("Учитель " + this.name + " идет на работу в " + this.university.name + ".");
     }
 
     @Override
