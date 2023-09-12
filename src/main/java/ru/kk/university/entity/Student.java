@@ -1,12 +1,28 @@
 package ru.kk.university.entity;
 
 public class Student implements StudentActions {
-    public String name;
-    public University university;
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public University getUniversity() {
+        return university;
+    }
+
+    public void setUniversity(University university) {
+        this.university = university;
+    }
+
+    private String name;
+    private University university;
 
     @Override
     public void doAction() {
-        System.out.println("Студент " + this.name + " идет на занятия в " + this.university.name + ".");
+        System.out.println("Студент " + this.name + " идет на занятия в " + this.university.getName() + ".");
     }
 
     @Override
